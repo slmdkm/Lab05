@@ -5,13 +5,19 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function testSum(num1, num2){
-var sum = num1+num2;
-console.log ('The sum of ' + num1 + ' and ' + num2 + ' is ' + sum + ' .');
+
+function sum(num1, num2){
+var sum = num1 + num2;
+console.log(sum);
+var sumString = ('The sum of ' + num1 + ' and ' + num2 + ' is ' + sum + '.');
+console.log(sumString);
+array =[sum,sumString];
+console.log(array);
+return array;
 
 }
+testSum(4,7);
 
-testSum(4, 7);
 
 // // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 //
@@ -82,13 +88,13 @@ testSum(4, 7);
 // /////////////////////////////////////
 // /////////////////////////////////////
 //
-// function testSum() {
-//   if (sum(4,7)[1] === 'The sum of 4 and 7 is 11.') {
-//     console.log('%c TEST FOR sum() PASSES', 'color: green');
-//   } else {
-//     console.log('%c TEST FOR sum() FAILS', 'color: red');
-//   }
-// }
+function testSum() {
+  if (sum(4,7)[1] === 'The sum of 4 and 7 is 11.') {
+    console.log('%c TEST FOR sum() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST FOR sum() FAILS', 'color: red');
+  }
+}
 //
 // function testMultiply() {
 //   if (multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
