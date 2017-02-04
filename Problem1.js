@@ -28,7 +28,15 @@ testSum(4,7);
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 //
 // // Write your code here
+function multiply(num1,num2){
+  var product = num1*num2;
+  var productString = ('The product of ' + num1 + ' and ' + num2 + ' is ' + product + '.');
+  array = [product, productString];
+  console.log(array);
+  return array;
 
+}
+testMultiply (4,7);
 
 //
 // // Here is the test for multiply(); uncomment it to run it
@@ -95,14 +103,14 @@ function testSum() {
     console.log('%c TEST FOR sum() FAILS', 'color: red');
   }
 }
-//
-// function testMultiply() {
-//   if (multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
-//     console.log('%c TEST FOR multiply() PASSES', 'color: green');
-//   } else {
-//     console.log('%c TEST FOR multiply() FAILS', 'color: red');
-//   }
-// }
+
+function testMultiply() {
+  if (multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
+    console.log('%c TEST FOR multiply() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST FOR multiply() FAILS', 'color: red');
+  }
+}
 //
 // function testSumAndMultiply() {
 //   if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
