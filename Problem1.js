@@ -74,11 +74,19 @@ testSumAndMultiply(4,7,5);
 // "2,3,4 was passed in as an array of numbers, and 9 is their sum."
 // Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 //
+testArray = [2,3,4];
 // // Write your code here
-// testArray = [2,3,4];
+function sumArray(arr){
+var sum = arr[0] + arr[1] + arr[2];
+  var sumString = (arr[0] + ',' + arr[1] + ',' + arr[2] + ' was passed in as an array of numbers, and ' + sum + ' is their sum.');
+  array = [sum, sumString];
+  console.log(array);
+  return array;
+}
+
 //
 // // Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 //
 // // Once you get the test passing, do an a-c-p cycle, synchronize the code between both GitHubs and both laptops, and swap Driver/Navigator roles. Don't forget to create a new branch for your work on the next question!
 //
@@ -130,13 +138,13 @@ function testSumAndMultiply() {
   }
 }
 //
-// function testSumArray() {
-//   if (sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
-//     console.log('%c TEST FOR sumArray() PASSES', 'color: green');
-//   } else {
-//     console.log('%c TEST FOR sumArray() FAILS', 'color: red');
-//   }
-// }
+function testSumArray() {
+  if (sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
+    console.log('%c TEST FOR sumArray() PASSES', 'color: green');
+  } else {
+    console.log('%c TEST FOR sumArray() FAILS', 'color: red');
+  }
+}
 //
 // function testMultiplyArray() {
 //   if (multiplyArray(testArray)[1] === 'The numbers 2,3,4 have a product of 24.') {
